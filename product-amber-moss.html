@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amber & Moss — Anchor & Ember</title>
+
+<!-- ============================================================
+     PASTE YOUR CONTENTSQUARE TAG HERE, INSIDE <head>.
+     Same snippet as on index.html — install it on every page.
+     ============================================================ -->
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html" data-nav="index.html">Anchor &amp; Ember</a>
+  <nav>
+    <a href="index.html" data-nav="index.html">Shop</a>
+    <a href="cart.html" data-nav="cart.html">Cart<span id="cart-count">0</span></a>
+  </nav>
+</header>
+
+<a class="back-link" href="index.html" data-nav="index.html">&larr; Back to shop</a>
+
+<section class="product-detail">
+  <div class="swatch" style="background:#a8522f;"></div>
+  <div>
+    <h1>Amber & Moss</h1>
+    <div class="price">$32.00</div>
+    <p>Warm amber resin grounded with damp forest moss.</p>
+    <button class="add" id="add-btn" onclick="addToCart('amber-moss')">Add to cart</button>
+  </div>
+</section>
+
+<script src="shop.js"></script>
+</body>
+</html>

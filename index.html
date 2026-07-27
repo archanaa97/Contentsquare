@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchor & Ember — Demo Shop</title>
+
+<!-- ============================================================
+     PASTE YOUR CONTENTSQUARE TAG HERE, INSIDE <head>.
+     Contentsquare recommends installing it on every page you want
+     to track — so copy this same snippet into the <head> of
+     index.html, each product-*.html file, and cart.html.
+     ============================================================ -->
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Anchor &amp; Ember</a>
+  <nav>
+    <a href="#">About</a>
+    <a href="cart.html" data-nav="cart.html">Cart<span id="cart-count">0</span></a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hand-poured candles, made to be lived with</h1>
+  <p>A demo storefront — click a product to view its page, edit freely for testing tags.</p>
+</section>
+
+<section class="grid">
+  <div class="card">
+    <a href="product-cedar-smoke.html" data-nav="product-cedar-smoke.html">
+      <div class="swatch" style="background:#7a5c3e;"></div>
+      <h3>Cedar & Smoke</h3>
+      <div class="price">$28.00</div>
+    </a>
+    <button class="add" id="add-btn-cedar-smoke" onclick="addToCart('cedar-smoke')">Add to cart</button>
+  </div>
+
+  <div class="card">
+    <a href="product-sea-salt-fig.html" data-nav="product-sea-salt-fig.html">
+      <div class="swatch" style="background:#8fa89e;"></div>
+      <h3>Sea Salt Fig</h3>
+      <div class="price">$24.00</div>
+    </a>
+    <button class="add" id="add-btn-sea-salt-fig" onclick="addToCart('sea-salt-fig')">Add to cart</button>
+  </div>
+
+  <div class="card">
+    <a href="product-amber-moss.html" data-nav="product-amber-moss.html">
+      <div class="swatch" style="background:#a8522f;"></div>
+      <h3>Amber & Moss</h3>
+      <div class="price">$32.00</div>
+    </a>
+    <button class="add" id="add-btn-amber-moss" onclick="addToCart('amber-moss')">Add to cart</button>
+  </div>
+
+  <div class="card">
+    <a href="product-quiet-library.html" data-nav="product-quiet-library.html">
+      <div class="swatch" style="background:#4a5c45;"></div>
+      <h3>Quiet Library</h3>
+      <div class="price">$26.00</div>
+    </a>
+    <button class="add" id="add-btn-quiet-library" onclick="addToCart('quiet-library')">Add to cart</button>
+  </div>
+</section>
+
+<script src="shop.js"></script>
+</body>
+</html>

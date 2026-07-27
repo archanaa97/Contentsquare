@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart — Anchor & Ember</title>
+
+<!-- ============================================================
+     PASTE YOUR CONTENTSQUARE TAG HERE, INSIDE <head>.
+     Same snippet as on the other pages.
+     ============================================================ -->
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html" data-nav="index.html">Anchor &amp; Ember</a>
+  <nav>
+    <a href="index.html" data-nav="index.html">Shop</a>
+    <a href="cart.html" data-nav="cart.html">Cart<span id="cart-count">0</span></a>
+  </nav>
+</header>
+
+<div class="cart-page" id="cart-view">
+  <h1>Your Cart</h1>
+  <div id="cart-items"></div>
+  <div id="cart-total"></div>
+  <button class="checkout" onclick="checkout()">Checkout</button>
+</div>
+
+<div class="cart-page" id="confirmation">
+  <h2>Order confirmed 🎉</h2>
+  <p>This fires a "purchase" event — useful for testing e-commerce tracking.</p>
+  <p id="order-total"></p>
+  <p><a href="index.html">Continue shopping</a></p>
+</div>
+
+<script src="shop.js"></script>
+</body>
+</html>

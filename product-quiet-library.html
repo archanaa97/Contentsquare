@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiet Library — Anchor & Ember</title>
+
+<!-- ============================================================
+     PASTE YOUR CONTENTSQUARE TAG HERE, INSIDE <head>.
+     Same snippet as on index.html — install it on every page.
+     ============================================================ -->
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html" data-nav="index.html">Anchor &amp; Ember</a>
+  <nav>
+    <a href="index.html" data-nav="index.html">Shop</a>
+    <a href="cart.html" data-nav="cart.html">Cart<span id="cart-count">0</span></a>
+  </nav>
+</header>
+
+<a class="back-link" href="index.html" data-nav="index.html">&larr; Back to shop</a>
+
+<section class="product-detail">
+  <div class="swatch" style="background:#4a5c45;"></div>
+  <div>
+    <h1>Quiet Library</h1>
+    <div class="price">$26.00</div>
+    <p>Old paper, leather, and a whisper of vanilla.</p>
+    <button class="add" id="add-btn" onclick="addToCart('quiet-library')">Add to cart</button>
+  </div>
+</section>
+
+<script src="shop.js"></script>
+</body>
+</html>
